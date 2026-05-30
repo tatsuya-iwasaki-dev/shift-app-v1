@@ -1,1 +1,41 @@
-<h1>レストラン〇〇</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>シフト提出</title>
+</head>
+<body>
+  <h1>シフトを提出してください</h1>
+
+  <!-- 名前を選択 -->
+  <p>名前:</p>
+  <select name="e-name" id="name-select">
+    <option value="" selected>名前を選択してください</option>
+    <option value="a">A</option>
+    <option value="b">B</option>
+    <option value="c">C</option>
+    <option value="d">D</option>
+    <option value="e">E</option>
+  </select>
+  <br>
+
+  <!-- 日付を選択 -->
+  <p>日付:</p>
+  <input id="date" type="date">
+
+  <!-- 勤務時間を選択 -->
+   <p>勤務時間:</p>
+  <input type="radio" name="shift" id="lunch" value="lunch">
+  <label for="lunch">ランチ</label>
+
+  <input type="radio" name="shift" id="dinner" value="dinner">
+  <label for="dinner">ディナー</label>
+  <br>
+  <br>
+
+  <!-- 送信 -->
+  <input id="button" type="button" value="送信">
+
+</body>
+</html>
